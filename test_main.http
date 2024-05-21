@@ -25,3 +25,20 @@ Content-Type: application/json
 
 ### Delete John Doe
 DELETE http://127.0.0.1:8000/users/1
+
+
+### Search by name
+GET http://127.0.0.1:8000/users/search
+Content-Type: application/json
+
+{
+  "name": "John Doe"
+}
+
+### Search by email provider
+GET http://127.0.0.1:8000/users/search
+Content-Type: application/json
+
+{
+  "email": "gmail.com"
+}
