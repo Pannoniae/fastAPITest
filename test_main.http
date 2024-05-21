@@ -1,0 +1,27 @@
+# Test your FastAPI endpoints
+
+### Get list of users
+GET http://127.0.0.1:8000/users
+
+
+
+### Create a new user
+POST http://127.0.0.1:8000/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "johndoe@gmail.com",
+  "credit_balance": 200
+}
+
+### Set a phone number for John Doe
+PUT http://127.0.0.1:8000/users/1
+Content-Type: application/json
+
+{
+  "phone": "+44 123 468 9557"
+}
+
+### Delete John Doe
+DELETE http://127.0.0.1:8000/users/1
